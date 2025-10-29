@@ -1,6 +1,6 @@
 <?php
 function validate($login, $pwd) {
-	if ($login == "login" && $pwd == "pwd") {
+	if ($login == "Marek" && $pwd == "pwd") {
 		return true;
 	} else {
 		return false;

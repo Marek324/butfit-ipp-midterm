@@ -2,17 +2,19 @@
 <html>
 <head></head>
 <body>
-<?php
-// a dalej neviem :D
-if (isset($_COOKIE["counter"])) {
-	$count = $_COOKIE["counter"];
-} else {
-	$count = 0;
-}
-$count++;
-setcookie("counter", $count);
-?>
-<p><?= $count ?>
+	<h3>Cookies visit counter</h3>
+
+	<?php
+	if (isset($_COOKIE["counter"])) {
+		$count = $_COOKIE["counter"];
+	} else {
+		$count = 0;
+	}
+	$count++;
+	setcookie("counter", $count);
+	?>
+
+	<p>Count: <?= $count ?>
 </body>
 </html>
 
