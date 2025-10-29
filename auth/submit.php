@@ -1,4 +1,5 @@
 <?php
+session_start();
 function validate($login, $pwd) {
 	if ($login == "Marek" && $pwd == "pwd") {
 		return true;
@@ -6,8 +7,6 @@ function validate($login, $pwd) {
 		return false;
 	}
 }
-
-session_start();
 
 $login = $_POST["login"] ?? '';
 $pwd = $_POST["password"] ?? '';

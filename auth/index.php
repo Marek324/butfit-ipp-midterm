@@ -16,7 +16,7 @@
 			<label for="login">Login:</label><br>
 			<input type="text" name="login" id="login" required><br>
 			<label for="password">Password:</label><br>
-			<input type="text" name="password" id="password" required><br>
+			<input type="password" name="password" id="password" required><br>
 			<input type="submit" value="Submit">
 		</form>
 	<?php
